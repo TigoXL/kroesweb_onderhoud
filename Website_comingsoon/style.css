@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Raleway";
+  src: url('./Fonts/Raleway-Regular.ttf');
+}
+@font-face {
+  font-family: "answer";
+  src: url('./Fonts/answer.regular.ttf');
+}
+@font-face {
+  font-family: "sensation-bold";
+  src: url('./Fonts/sansation.bold.ttf');
+}
+
+/* 
+Kleuren
+Groen: #77EF8F
+Blauw: #2893D6 
+*/
+
+* {
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Raleway", "PT Sans", Calibri, Tahoma, sans-serif;
+}
+img {
+  width: 100%;
+}
+
+/* ==========
+######## ##  ##   ######    #####    #####   ######      ##    ######    ##  ##  ##  ##   
+#  ##  # ##  ##    ##  ##  ##   ##  ##   ##   ##  ##    ####    ##  ##   ##  ##  ##  ##   
+   ##    ##  ##    ##  ##  ##   ##  ##        ##  ##   ##  ##   ##  ##   ##  ##  ##  ##   
+   ##     ####     ##  ##  ##   ##  ##        #####    ######   ##  ##   ######   ####    
+   ##      ##      #####   ##   ##  ##  ###   ####     ##  ##   #####    ##  ##    ##     
+   ##      ##      ##      ##   ##  ##   ##   ## ##    ##  ##   ##       ##  ##    ##     
+  ####    ####    ###       #####    #####   ###  ##   ##  ##  ###       ##  ##   #### 
+========== */
+
+h1 {
+  font-size: 10rem;
+  font-family: "sensation-bold", "Montserrat", sans-serif;
+  color: #fff;
+  letter-spacing: 0.125em;
+}
+p {
+  font-size: 1.25rem;
+  line-height: 120%;
+}
+
+/* header */
+
+header {
+  color: #fff
+}
+header p {
+  font-size: 1.75rem;
+}
+
+/* media queries */
+
+@media (max-width: 1100px) {
+  h1 {
+    font-size: 5rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 449px) {
+  h1 {
+    font-size: 3rem;
+  }
+  header p {
+    font-size: 0.75rem;
+  }
+}
+
+/* ==========
+ ####       ##    ##  ##    #####    ##  ##  ######## 
+  ##       ####   ##  ##   ##   ##   ##  ##  #  ##  #
+  ##      ##  ##  ##  ##   ##   ##   ##  ##     ##
+  ##      ######   ####    ##   ##   ##  ##     ##
+  ##      ##  ##    ##     ##   ##   ##  ##     ##
+  ## ##   ##  ##    ##     ##   ##   ##  ##     ##
+ ######   ##  ##   ####     #####     ####     ####
+========== */
+
+/* background */
+
+body {
+  background-image: url('./Images/Logos/KWGradient.png');
+  background-size: 60vw;
+  background-color: #001E3C;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 25vh;
+  background-attachment: fixed;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  height: 100vh;
+}
+
+/* header */
+
+header {
+  height: 400px;
+  text-align: center;
+  padding-top: 100px;
+}
+a {
+  color: #2893D6;
+}
+/* media queries */
+
+@media (max-width: 1100px) {
+  header {
+    height: 200px;
+  }
+}
+
+@media (max-width: 449px) {
+  header {
+    padding: 0px;
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    background-image: url('./Images/Logos/KGradientSquare.png');
+  }
+}
